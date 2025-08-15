@@ -1,0 +1,2 @@
+`include "xsc_base_test.sv"
+`include "ut/xsc_test/tests/main/hw/ut_test.sv"
