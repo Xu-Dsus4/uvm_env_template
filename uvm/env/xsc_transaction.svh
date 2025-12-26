@@ -1,5 +1,3 @@
-`ifndef XSC_TRANSACTION_SVH_
-`define XSC_TRANSACTION_SVH_
 
 `ifndef XSC_TRANSACTION_SVH
 `define XSC_TRANSACTION_SVH
@@ -25,5 +23,5 @@ class xsc_transaction extends uvm_sequence_item;
    endfunction
 
 endclass
-`endif
+
 `endif // XSC_TRANSACTION_SVH_

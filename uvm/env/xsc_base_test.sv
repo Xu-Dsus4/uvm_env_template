@@ -3,7 +3,8 @@
 
 // class xsc_base_test extends uvm_test;
 class xsc_base_test extends mv_test;
-    xsc_env env;
+    xsc_env         env;
+    xsc_coverage    cov;
 
     function new(string name = "xsc_base_test", uvm_component parent = null);
         super.new(name, parent);
@@ -19,6 +20,7 @@ function void xsc_base_test::build_phase(uvm_phase phase);
     `uvm_info(get_name(), $sformatf("build phase start"), UVM_LOW)
     super.build_phase(phase);
     env = xsc_env::type_id::create("env", this);
+    cov = xsc_coverage::type_id::create("cov", this);
     `uvm_info(get_name(), $sformatf("build phase end"), UVM_LOW)
 endfunction
 
@@ -37,4 +39,6 @@ function void xsc_base_test::report_phase(uvm_phase phase);
         $display("TEST CASE PASSED");
     end
 endfunction
+
+
 `endif // XSC_BASE_TEST_SV_

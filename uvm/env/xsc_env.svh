@@ -1,5 +1,3 @@
-`ifndef XSC_ENV_SVH_
-`define XSC_ENV_SVH_
 
 `ifndef XSC_ENV_SVH
 `define XSC_ENV_SVH
@@ -29,6 +27,5 @@ function void xsc_env::connect_phase(uvm_phase phase);
 
 endfunction
 
-`endif
 
 `endif // XSC_ENV_SVH_
